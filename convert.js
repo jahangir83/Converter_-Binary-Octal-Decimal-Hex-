@@ -12,12 +12,12 @@ dimimal.addEventListener('keypress', function (e) {
     if (e.key == 'Enter') {
         let val = parseInt(e.target.value)
         let hexa = val.toString(16).toUpperCase()
-        let Octal = val.toString(8)
+        let OctalValue = val.toString(8)
         let binaryValue = val.toString(2)
 
     
     binary.value = binaryValue
-    octal.value = Octal
+    octal.value = OctalValue
     hexadici.value = hexa
     }
 
