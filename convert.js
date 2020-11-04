@@ -88,6 +88,7 @@ reset.addEventListener('click', function(){
 //--------------Type Conversion
 let textfield = document.getElementById('textField')
 let binaryField = document.getElementById('binaryField')
+let res = document.getElementById("res")
 
 textfield.addEventListener('keypress', function (e) {
     if (e.key == 'Enter') {
@@ -133,7 +134,12 @@ binaryField.addEventListener('keypress', function (e) {
             result += 2 ** a;
             }
         }
-        console.log("Result ", result)
+
         return result;
             }
+})
+
+res.addEventListener('click', function () {
+    textfield.value = ""
+    binaryField.value = ""
 })
