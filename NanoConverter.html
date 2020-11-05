@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <h3 class="card-title text-center bg-dark text-light py-3 ">Nano Converter</h3>
+                <div class="card-body">
+                    
+                        <h4>Number System Conversion</h4>
+                    <label for="Dicimal">Dicimal</label>
+                    <input type="text" id="dicimal" value="0" class="form-control">
+
+                    <label for="Binary">Binary</label>
+                    <input type="text" id="binary" value="" class="form-control">
+
+                    <label for="Octal">Octal</label>
+                    <input type="text" id="octal" value="" class="form-control">
+
+                    <label for="Hexadacimal">Hexadacimal</label>
+                    <input type="text" id="hexadacimal" value="" class="form-control">
+
+                    <input type="submit" id="reset" class="align-self-start"  value="RESET">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Type conversion-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <h5 class="card-title">Text Conversion</h5>
+                <div class="card-body">
+                    <label for="text">Enter You Text</label>
+                    
+                    <textarea id="textField" value="" class="form-control" style="width: 100%; height: 100px;"></textarea>
+
+                    <label for="text">Enter You Binary text</label>
+     
+                    <textarea id="binaryField" value="" class="form-control" style="width: 100%; height: 100px;"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br>
+<hr>
+
+<script src="./convert.js"></script>
+    
+</body>
+</html>

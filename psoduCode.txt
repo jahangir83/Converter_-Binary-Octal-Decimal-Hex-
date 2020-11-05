@@ -1,0 +1,297 @@
+
+
+Given a string, return a new string where the first and last chars have been exchanged.
+
+function(str){
+    if str.lenght <=1 return str
+
+    let one = str.slice(-1)
+    let tow = str.slice(1, -1)
+    let three = str.slice(1)
+
+    return one + tow + three
+}
+
+
+def str :
+    front_end = 3
+    if len(str) < front_end
+        front_end = len(str)
+    fornt = str[:front_end]
+    return fornt + fornt + fornt
+
+    
+Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+
+def string_time(str, n):
+    result = ""
+    for j in range(n):
+        result += str
+
+    return result
+
+
+    
+Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front;
+
+def front_times(str, n):
+    return = ""
+    front_size = 3
+    if len(str) <= 3:
+        front_size = len(str)
+    front = str[:front_size]
+    for j in range(n):
+        result = result + front
+    return result
+
+
+    
+Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
+
+def string_bite(str):
+    result = ""
+    for i in range(len(str)):
+        if i % 2 == 0:
+            result = result + str[i]
+        
+    return result
+
+
+
+Given a non-empty string like "Code" return a string like "CCoCodCode".
+
+def string_splotin(str):
+    return = ""
+    for i in range(len(str)):
+        result = result + str[:i + 1]
+
+    return result
+
+    
+Given a string, return the count of the number of times that a substring length 2 appears in the string and also as the last 2 chars of the string, so "hixxxhi" yields 1 (we won't count the end substring).
+
+def last2(str):
+    if len(str) < 2:
+        return 0;
+    last2 = str[len(str) -2:]
+    count = 0;
+
+    for i in range(len(str)-2):
+        sub = str[i: i+1]
+        if sub == last2:
+         count = count + 1
+    return count
+
+
+    
+Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
+
+def count_4(nums):
+    forrn = nums[:4]
+    count = 0
+    for num in forrn:
+        if num == 9:
+            count = count + 1
+    return count
+
+
+    Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+
+    def array123(nums):
+        for i in range(len(nums)-2):
+            if nums[i] ==1 and nums[i+1] == 2 and nums[i+2] == 3
+                return print("True")
+            
+        return print("False")
+
+
+
+def string_match(a,b):
+    count = 0
+    subtring = min(len(a), len(b))
+    for i in range(subtring -1):
+        a_sub = a[i: i+ 2]
+        b_sub = b[i: i+ 2]
+        if a_sub == b_sub:
+            count = count + 1
+    return count
+
+
+def sum(a, b):
+    x = a+b
+    return x
+
+
+def html(tag, word):
+    return "<" + tag + ">" + word "</" + tag +">"
+
+
+def first_2(str):
+    if len(str) < 2:
+        return 0
+    x = str[:2]
+    return x + x +x
+
+
+
+def last2(str):
+    first2 = str[:2]
+    exd = str[2 :len(str)]
+    return exd + fiest2
+
+
+    Given an array of ints, return True if 6 appears as either the first or last element in the array. The array will be length 1 or more
+
+def first_last6(nums):
+    first = nums[:1]
+    last = nums[-1:]
+    if first == 6 or last == 6:
+        return True
+    return False
+
+
+    Given an array of ints then check first element and last element same equal- is't int
+
+def fir_las_equ(nums):
+    f = num[0]
+    l = num[len(nums) -1]
+    if f == l:
+        return True
+    return False
+
+
+def common_end(a, b):
+    if a[len(a) -1] == b[len(b) -1]:
+        return True
+    return False
+
+
+    
+Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array.
+
+def max_end(nums):
+    end = nums[len(nums)-1]
+    fir = nums[0]
+    if fir > end:
+        [nums[0] = fir]
+
+large 2 element 
+FUNC(ARR){
+    FIRST_LARGE = ARR[0]
+    LAST_LARGE = ARR[0]
+    Loop(Element Itaret){
+        if arr[i] > f{
+            #sowap
+            LAST_LARGE = FIRST_LARGE
+            FIRST_LARGE = arr[i]
+            f
+        }
+    }
+    return LAST_LARGE
+}
+
+
+
+def make_ends(nums):
+    
+    if len(nums) > 0 :
+        return [nums[0], nums[-1]]
+
+
+When squirrels get together for a party, they like to have cigars. A squirrel party is successful when the number of cigars is between 40 and 60, inclusive. Unless it is the weekend, in which case there is no upper bound on the number of cigars. Return True if the party with the given values is successful, or False otherwise.
+
+def cigers_party(cigera, is_weekend):
+    if is_weekend:
+        if cigars >= 40:
+            return True
+        else:
+            return False
+    else:
+        retur Ture
+
+
+The squirrels in Palo Alto spend most of the day playing. In particular, they play if the temperature is between 60 and 90 (inclusive). Unless it is summer, then the upper limit is 100 instead of 90. Given an int temperature and a boolean is_summer, return True if the squirrels play and False otherwise.
+
+def squirrels_play(temp, is_summer):
+    if is_summer:
+        if and tem >= 60 and temp <= 100:
+            return Ture
+        else:
+            return False
+    elif temp >= 60 and temp <= 90:
+        return True
+    else:
+        return False
+
+    You are driving a little too fast, and a police officer stops you. Write code to compute the result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket. If speed is 60 or less, the result is 0. If speed is between 61 and 80 inclusive, the result is 1. If speed is 81 or more, the result is 2. Unless it is your birthday -- on that day, your speed can be 5 higher in all cases.
+
+def caught_spending(speed, is_birthday):
+    if is_birthday:
+        if speed speed < 60:
+            return 0
+        elif speed > 60 and speed < 80:
+                return 1
+        elif speed > 80:
+            return 2
+    elif speed <= 60:
+        result 0
+    elif speed > 60 and speed < 80:
+        return 1
+    elif speed > 80:
+        return 2
+        
+
+def sorta_sum(a, b):
+    if a > b:
+        return 20
+    else:
+        return a +b
+
+
+    
+
+def int1to10(n, outside_mode):
+    if outside_mode:
+        return True
+    elif n > 1 and n <= 10
+        return Ture
+    return False
+
+
+def jj(num):
+    a = num % 10
+    if a <= 2 
+
+def current(item):
+    currentPage = item
+    itemPage = 10
+    skipe = (itemPage * currentPage) - itemPage
+
+def long_sum(a, b, c):
+    if a == b and b == c:
+        return 0
+    elif a == b :
+        return c
+    elif a == c:
+        return b
+    elif 
+
+
+def luky_sum(a, b, c):
+    if a == 13 and b == 13:
+        return a + b 
+    elif b == 13:
+        return a
+    elif a == 13:
+        return 0
+    else:
+        return a + b + c
+
+def none_teen(a, b, c ):
+    return fix(a) + fix(b) + fix(c)
+
+def fix(n):
+    if n >= 13 and n <= 19 and n != 13 and n  != 15:
+        return 0
+
+
